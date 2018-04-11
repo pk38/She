@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity"
+    android:orientation="horizontal" android:keepScreenOn="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/woman"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/remDaysTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Days left"
+            android:textSize="16dp"
+            android:layout_above="@+id/profileButton"
+            android:layout_centerHorizontal="true"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My PROFILE"
+            android:id="@+id/profileButton"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:focusableInTouchMode="true"
+            android:layout_marginBottom="79dp"
+            android:layout_above="@+id/painHacksButton"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/painHacksButton"
+            android:text="PAIN HACKS"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"
+            android:focusableInTouchMode="true"
+            android:elevation="@android:dimen/thumbnail_height"
+            android:layout_alignBaseline="@+id/motivationCenterButton"
+            android:layout_alignBottom="@+id/motivationCenterButton"
+            android:layout_toLeftOf="@+id/profileButton"
+            android:layout_toStartOf="@+id/profileButton" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MOTIVATION HACKS"
+            android:id="@+id/motivationCenterButton"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:focusableInTouchMode="true"
+            android:layout_marginRight="17dp"
+            android:layout_marginEnd="17dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="50dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+

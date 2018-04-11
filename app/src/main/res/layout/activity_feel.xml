@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity"
+    android:orientation="horizontal" android:keepScreenOn="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/howYouFeel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CARE TO SHARE ? "
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Happy"
+            android:id="@+id/happyButton"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:focusableInTouchMode="true"
+            android:layout_below="@+id/howYouFeel"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="111dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Angry"
+            android:id="@+id/angryButton"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:focusableInTouchMode="true"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/irritatedButton"
+            android:layout_alignStart="@+id/irritatedButton" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Irritated"
+            android:id="@+id/irritatedButton"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="57dp"
+            android:layout_below="@+id/angryButton"
+            android:layout_alignLeft="@+id/happyButton"
+            android:layout_alignStart="@+id/happyButton" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confident"
+            android:id="@+id/confidentButton"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:focusableInTouchMode="true"
+            android:layout_alignTop="@+id/happyButton"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="57dp"
+            android:layout_marginEnd="57dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Depressed"
+            android:id="@+id/depressedButton"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:focusableInTouchMode="true"
+            android:layout_alignBottom="@+id/angryButton"
+            android:layout_alignLeft="@+id/confidentButton"
+            android:layout_alignStart="@+id/confidentButton" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Neutral"
+            android:id="@+id/neutralButon"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:focusableInTouchMode="true"
+            android:layout_alignBaseline="@+id/irritatedButton"
+            android:layout_alignBottom="@+id/irritatedButton"
+            android:layout_alignLeft="@+id/depressedButton"
+            android:layout_alignStart="@+id/depressedButton" />
+    </RelativeLayout>
+</LinearLayout>
